@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fast-api-pokemon
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fast-api-pokemon
+  template:
+    metadata:
+      labels:
+        app: fast-api-pokemon
+    spec:
+      containers:
+      - name: fast-api-pokemon
+        image: fast-api-pokemon:1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+          protocol: TCP
