@@ -4,7 +4,7 @@ metadata:
   name: fast-api-pokemon
 spec:
   selector:
-    app: ocasa-tickets-api
+    app: fast-api-pokemon
   type: NodePort
   ports:
     - port: 80
