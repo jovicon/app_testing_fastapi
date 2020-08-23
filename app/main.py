@@ -2,7 +2,11 @@ from fastapi import Depends, FastAPI, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
 # from sqlalchemy.orm import Session
 
-from .api import pokemons
+# development routes
+# from .api import pokemons
+
+# production routes
+from api import pokemons
 
 app = FastAPI()
 
