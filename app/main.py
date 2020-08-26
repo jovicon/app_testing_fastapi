@@ -3,10 +3,10 @@ from fastapi.security import OAuth2PasswordRequestForm
 # from sqlalchemy.orm import Session
 
 # development routes
-from .api import pokemons
+# from .api import pokemons
 
 # production routes
-# from api import pokemons
+from api import pokemons
 
 app = FastAPI()
 
